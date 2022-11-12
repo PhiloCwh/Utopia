@@ -68,7 +68,7 @@ contract SBT is ERC721, ERC721Burnable, Ownable{
       //putNumberAttribute(tokenId, "donateTime", Strings.toString(donateTime),"");
       putStringAttribute(tokenId,"bindAddress",Strings.toHexString(dreamer));
       putStringAttribute(tokenId, "gender", gender);
-      putStringAttribute(tokenId, "age", age);
+      putNumberAttribute(tokenId, "age", age,"");
       
     //    putNumberAttribute(tokenId, "Stamina", "1.4","");
     //    putStringAttribute(tokenId, "Personality", "Sad");
