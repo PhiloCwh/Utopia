@@ -303,6 +303,10 @@ contract SBT is ERC721, ERC721Burnable, Ownable{
 
     }
 
+    function addressForTokenURI(address userAddress) public view returns(string memory) {
+      return tokenURI(soulID[userAddress]);
+    }
+
     /**
      * 获取属性的json字符串
      */
